@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B314CF6C1E4C6339000FE3CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B314CF6B1E4C6339000FE3CE /* main.m */; };
+		B314CF6F1E4C6339000FE3CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B314CF6E1E4C6339000FE3CE /* AppDelegate.m */; };
+		B314CF771E4C6339000FE3CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B314CF761E4C6339000FE3CE /* Assets.xcassets */; };
+		B314CF7A1E4C6339000FE3CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B314CF781E4C6339000FE3CE /* LaunchScreen.storyboard */; };
+		B314CF831E4C637A000FE3CE /* LYRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B314CF821E4C637A000FE3CE /* LYRootViewController.m */; };
+		B314CF861E4C6406000FE3CE /* LYLuckyCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = B314CF851E4C6406000FE3CE /* LYLuckyCardView.m */; };
+		B314CF881E4C6639000FE3CE /* LYLuckyCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B314CF871E4C6639000FE3CE /* LYLuckyCardView.xib */; };
+		B314CF8D1E4C686D000FE3CE /* LYLuckyCardRotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = B314CF8C1E4C686D000FE3CE /* LYLuckyCardRotationView.m */; };
+		B314CF8F1E4C6873000FE3CE /* LYLuckyCardRotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B314CF8E1E4C6873000FE3CE /* LYLuckyCardRotationView.xib */; };
+		B314CFE81E4C6BF2000FE3CE /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B314CFD01E4C6BF2000FE3CE /* MASCompositeConstraint.m */; };
+		B314CFE91E4C6BF2000FE3CE /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B314CFD31E4C6BF2000FE3CE /* MASConstraint.m */; };
+		B314CFEA1E4C6BF2000FE3CE /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = B314CFD51E4C6BF2000FE3CE /* MASConstraintMaker.m */; };
+		B314CFEB1E4C6BF2000FE3CE /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B314CFD71E4C6BF2000FE3CE /* MASLayoutConstraint.m */; };
+		B314CFEC1E4C6BF2000FE3CE /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = B314CFDB1E4C6BF2000FE3CE /* MASViewAttribute.m */; };
+		B314CFED1E4C6BF2000FE3CE /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B314CFDD1E4C6BF2000FE3CE /* MASViewConstraint.m */; };
+		B314CFEE1E4C6BF2000FE3CE /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B314CFDF1E4C6BF2000FE3CE /* NSArray+MASAdditions.m */; };
+		B314CFEF1E4C6BF2000FE3CE /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B314CFE21E4C6BF2000FE3CE /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		B314CFF01E4C6BF2000FE3CE /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B314CFE41E4C6BF2000FE3CE /* View+MASAdditions.m */; };
+		B314CFF11E4C6BF2000FE3CE /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B314CFE71E4C6BF2000FE3CE /* ViewController+MASAdditions.m */; };
+		B314CFF91E4C6DF9000FE3CE /* LYLuckyCardCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = B314CFF81E4C6DF9000FE3CE /* LYLuckyCardCellView.m */; };
+		B314CFFB1E4C701F000FE3CE /* LYRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B314CFFA1E4C701F000FE3CE /* LYRootViewController.xib */; };
+		B314D0001E4C7147000FE3CE /* it_luckyCard_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B314CFFC1E4C7147000FE3CE /* it_luckyCard_bg@2x.png */; };
+		B314D0011E4C7147000FE3CE /* it_luckyCard_drawBtn_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B314CFFD1E4C7147000FE3CE /* it_luckyCard_drawBtn_bg@2x.png */; };
+		B314D0021E4C7147000FE3CE /* it_luckyCard_pointer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B314CFFE1E4C7147000FE3CE /* it_luckyCard_pointer@2x.png */; };
+		B314D0031E4C7147000FE3CE /* it_popup_new_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B314CFFF1E4C7147000FE3CE /* it_popup_new_close@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B314CF671E4C6339000FE3CE /* LYLuckyCardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYLuckyCardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B314CF6B1E4C6339000FE3CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B314CF6D1E4C6339000FE3CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B314CF6E1E4C6339000FE3CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B314CF761E4C6339000FE3CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B314CF791E4C6339000FE3CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B314CF7B1E4C6339000FE3CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B314CF811E4C637A000FE3CE /* LYRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYRootViewController.h; sourceTree = "<group>"; };
+		B314CF821E4C637A000FE3CE /* LYRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYRootViewController.m; sourceTree = "<group>"; };
+		B314CF841E4C6406000FE3CE /* LYLuckyCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYLuckyCardView.h; sourceTree = "<group>"; };
+		B314CF851E4C6406000FE3CE /* LYLuckyCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYLuckyCardView.m; sourceTree = "<group>"; };
+		B314CF871E4C6639000FE3CE /* LYLuckyCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYLuckyCardView.xib; sourceTree = "<group>"; };
+		B314CF8B1E4C686D000FE3CE /* LYLuckyCardRotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYLuckyCardRotationView.h; sourceTree = "<group>"; };
+		B314CF8C1E4C686D000FE3CE /* LYLuckyCardRotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYLuckyCardRotationView.m; sourceTree = "<group>"; };
+		B314CF8E1E4C6873000FE3CE /* LYLuckyCardRotationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYLuckyCardRotationView.xib; sourceTree = "<group>"; };
+		B314CFCF1E4C6BF2000FE3CE /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		B314CFD01E4C6BF2000FE3CE /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		B314CFD11E4C6BF2000FE3CE /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		B314CFD21E4C6BF2000FE3CE /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		B314CFD31E4C6BF2000FE3CE /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		B314CFD41E4C6BF2000FE3CE /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		B314CFD51E4C6BF2000FE3CE /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		B314CFD61E4C6BF2000FE3CE /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		B314CFD71E4C6BF2000FE3CE /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		B314CFD81E4C6BF2000FE3CE /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		B314CFD91E4C6BF2000FE3CE /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		B314CFDA1E4C6BF2000FE3CE /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		B314CFDB1E4C6BF2000FE3CE /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		B314CFDC1E4C6BF2000FE3CE /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		B314CFDD1E4C6BF2000FE3CE /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		B314CFDE1E4C6BF2000FE3CE /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		B314CFDF1E4C6BF2000FE3CE /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		B314CFE01E4C6BF2000FE3CE /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		B314CFE11E4C6BF2000FE3CE /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		B314CFE21E4C6BF2000FE3CE /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		B314CFE31E4C6BF2000FE3CE /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		B314CFE41E4C6BF2000FE3CE /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		B314CFE51E4C6BF2000FE3CE /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		B314CFE61E4C6BF2000FE3CE /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		B314CFE71E4C6BF2000FE3CE /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		B314CFF71E4C6DF9000FE3CE /* LYLuckyCardCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYLuckyCardCellView.h; sourceTree = "<group>"; };
+		B314CFF81E4C6DF9000FE3CE /* LYLuckyCardCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYLuckyCardCellView.m; sourceTree = "<group>"; };
+		B314CFFA1E4C701F000FE3CE /* LYRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYRootViewController.xib; sourceTree = "<group>"; };
+		B314CFFC1E4C7147000FE3CE /* it_luckyCard_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "it_luckyCard_bg@2x.png"; sourceTree = "<group>"; };
+		B314CFFD1E4C7147000FE3CE /* it_luckyCard_drawBtn_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "it_luckyCard_drawBtn_bg@2x.png"; sourceTree = "<group>"; };
+		B314CFFE1E4C7147000FE3CE /* it_luckyCard_pointer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "it_luckyCard_pointer@2x.png"; sourceTree = "<group>"; };
+		B314CFFF1E4C7147000FE3CE /* it_popup_new_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "it_popup_new_close@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B314CF641E4C6339000FE3CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B314CF5E1E4C6339000FE3CE = {
+			isa = PBXGroup;
+			children = (
+				B314CF691E4C6339000FE3CE /* LYLuckyCardDemo */,
+				B314CF681E4C6339000FE3CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B314CF681E4C6339000FE3CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B314CF671E4C6339000FE3CE /* LYLuckyCardDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B314CF691E4C6339000FE3CE /* LYLuckyCardDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B314CF6D1E4C6339000FE3CE /* AppDelegate.h */,
+				B314CF6E1E4C6339000FE3CE /* AppDelegate.m */,
+				B314CF811E4C637A000FE3CE /* LYRootViewController.h */,
+				B314CF821E4C637A000FE3CE /* LYRootViewController.m */,
+				B314CFFA1E4C701F000FE3CE /* LYRootViewController.xib */,
+				B314CF841E4C6406000FE3CE /* LYLuckyCardView.h */,
+				B314CF851E4C6406000FE3CE /* LYLuckyCardView.m */,
+				B314CF871E4C6639000FE3CE /* LYLuckyCardView.xib */,
+				B314CF8B1E4C686D000FE3CE /* LYLuckyCardRotationView.h */,
+				B314CF8C1E4C686D000FE3CE /* LYLuckyCardRotationView.m */,
+				B314CF8E1E4C6873000FE3CE /* LYLuckyCardRotationView.xib */,
+				B314CFF71E4C6DF9000FE3CE /* LYLuckyCardCellView.h */,
+				B314CFF81E4C6DF9000FE3CE /* LYLuckyCardCellView.m */,
+				B314CFFC1E4C7147000FE3CE /* it_luckyCard_bg@2x.png */,
+				B314CFFD1E4C7147000FE3CE /* it_luckyCard_drawBtn_bg@2x.png */,
+				B314CFFE1E4C7147000FE3CE /* it_luckyCard_pointer@2x.png */,
+				B314CFFF1E4C7147000FE3CE /* it_popup_new_close@2x.png */,
+				B314CFCE1E4C6BF2000FE3CE /* Masonry */,
+				B314CF761E4C6339000FE3CE /* Assets.xcassets */,
+				B314CF781E4C6339000FE3CE /* LaunchScreen.storyboard */,
+				B314CF7B1E4C6339000FE3CE /* Info.plist */,
+				B314CF6A1E4C6339000FE3CE /* Supporting Files */,
+			);
+			path = LYLuckyCardDemo;
+			sourceTree = "<group>";
+		};
+		B314CF6A1E4C6339000FE3CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B314CF6B1E4C6339000FE3CE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B314CFCE1E4C6BF2000FE3CE /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				B314CFCF1E4C6BF2000FE3CE /* MASCompositeConstraint.h */,
+				B314CFD01E4C6BF2000FE3CE /* MASCompositeConstraint.m */,
+				B314CFD11E4C6BF2000FE3CE /* MASConstraint+Private.h */,
+				B314CFD21E4C6BF2000FE3CE /* MASConstraint.h */,
+				B314CFD31E4C6BF2000FE3CE /* MASConstraint.m */,
+				B314CFD41E4C6BF2000FE3CE /* MASConstraintMaker.h */,
+				B314CFD51E4C6BF2000FE3CE /* MASConstraintMaker.m */,
+				B314CFD61E4C6BF2000FE3CE /* MASLayoutConstraint.h */,
+				B314CFD71E4C6BF2000FE3CE /* MASLayoutConstraint.m */,
+				B314CFD81E4C6BF2000FE3CE /* Masonry.h */,
+				B314CFD91E4C6BF2000FE3CE /* MASUtilities.h */,
+				B314CFDA1E4C6BF2000FE3CE /* MASViewAttribute.h */,
+				B314CFDB1E4C6BF2000FE3CE /* MASViewAttribute.m */,
+				B314CFDC1E4C6BF2000FE3CE /* MASViewConstraint.h */,
+				B314CFDD1E4C6BF2000FE3CE /* MASViewConstraint.m */,
+				B314CFDE1E4C6BF2000FE3CE /* NSArray+MASAdditions.h */,
+				B314CFDF1E4C6BF2000FE3CE /* NSArray+MASAdditions.m */,
+				B314CFE01E4C6BF2000FE3CE /* NSArray+MASShorthandAdditions.h */,
+				B314CFE11E4C6BF2000FE3CE /* NSLayoutConstraint+MASDebugAdditions.h */,
+				B314CFE21E4C6BF2000FE3CE /* NSLayoutConstraint+MASDebugAdditions.m */,
+				B314CFE31E4C6BF2000FE3CE /* View+MASAdditions.h */,
+				B314CFE41E4C6BF2000FE3CE /* View+MASAdditions.m */,
+				B314CFE51E4C6BF2000FE3CE /* View+MASShorthandAdditions.h */,
+				B314CFE61E4C6BF2000FE3CE /* ViewController+MASAdditions.h */,
+				B314CFE71E4C6BF2000FE3CE /* ViewController+MASAdditions.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B314CF661E4C6339000FE3CE /* LYLuckyCardDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B314CF7E1E4C6339000FE3CE /* Build configuration list for PBXNativeTarget "LYLuckyCardDemo" */;
+			buildPhases = (
+				B314CF631E4C6339000FE3CE /* Sources */,
+				B314CF641E4C6339000FE3CE /* Frameworks */,
+				B314CF651E4C6339000FE3CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LYLuckyCardDemo;
+			productName = LYLuckyCardDemo;
+			productReference = B314CF671E4C6339000FE3CE /* LYLuckyCardDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B314CF5F1E4C6339000FE3CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = leo;
+				TargetAttributes = {
+					B314CF661E4C6339000FE3CE = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B314CF621E4C6339000FE3CE /* Build configuration list for PBXProject "LYLuckyCardDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B314CF5E1E4C6339000FE3CE;
+			productRefGroup = B314CF681E4C6339000FE3CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B314CF661E4C6339000FE3CE /* LYLuckyCardDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B314CF651E4C6339000FE3CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B314D0031E4C7147000FE3CE /* it_popup_new_close@2x.png in Resources */,
+				B314CF7A1E4C6339000FE3CE /* LaunchScreen.storyboard in Resources */,
+				B314CF771E4C6339000FE3CE /* Assets.xcassets in Resources */,
+				B314CFFB1E4C701F000FE3CE /* LYRootViewController.xib in Resources */,
+				B314CF881E4C6639000FE3CE /* LYLuckyCardView.xib in Resources */,
+				B314CF8F1E4C6873000FE3CE /* LYLuckyCardRotationView.xib in Resources */,
+				B314D0011E4C7147000FE3CE /* it_luckyCard_drawBtn_bg@2x.png in Resources */,
+				B314D0021E4C7147000FE3CE /* it_luckyCard_pointer@2x.png in Resources */,
+				B314D0001E4C7147000FE3CE /* it_luckyCard_bg@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B314CF631E4C6339000FE3CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B314CFEF1E4C6BF2000FE3CE /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				B314CF6F1E4C6339000FE3CE /* AppDelegate.m in Sources */,
+				B314CFF91E4C6DF9000FE3CE /* LYLuckyCardCellView.m in Sources */,
+				B314CFED1E4C6BF2000FE3CE /* MASViewConstraint.m in Sources */,
+				B314CF6C1E4C6339000FE3CE /* main.m in Sources */,
+				B314CF861E4C6406000FE3CE /* LYLuckyCardView.m in Sources */,
+				B314CF8D1E4C686D000FE3CE /* LYLuckyCardRotationView.m in Sources */,
+				B314CFF01E4C6BF2000FE3CE /* View+MASAdditions.m in Sources */,
+				B314CFE81E4C6BF2000FE3CE /* MASCompositeConstraint.m in Sources */,
+				B314CFEC1E4C6BF2000FE3CE /* MASViewAttribute.m in Sources */,
+				B314CFEA1E4C6BF2000FE3CE /* MASConstraintMaker.m in Sources */,
+				B314CFEE1E4C6BF2000FE3CE /* NSArray+MASAdditions.m in Sources */,
+				B314CFF11E4C6BF2000FE3CE /* ViewController+MASAdditions.m in Sources */,
+				B314CFE91E4C6BF2000FE3CE /* MASConstraint.m in Sources */,
+				B314CFEB1E4C6BF2000FE3CE /* MASLayoutConstraint.m in Sources */,
+				B314CF831E4C637A000FE3CE /* LYRootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B314CF781E4C6339000FE3CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B314CF791E4C6339000FE3CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B314CF7C1E4C6339000FE3CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B314CF7D1E4C6339000FE3CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B314CF7F1E4C6339000FE3CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LYLuckyCardDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leo.demo.LYLuckyCardDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B314CF801E4C6339000FE3CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LYLuckyCardDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leo.demo.LYLuckyCardDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B314CF621E4C6339000FE3CE /* Build configuration list for PBXProject "LYLuckyCardDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B314CF7C1E4C6339000FE3CE /* Debug */,
+				B314CF7D1E4C6339000FE3CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B314CF7E1E4C6339000FE3CE /* Build configuration list for PBXNativeTarget "LYLuckyCardDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B314CF7F1E4C6339000FE3CE /* Debug */,
+				B314CF801E4C6339000FE3CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B314CF5F1E4C6339000FE3CE /* Project object */;
+}
